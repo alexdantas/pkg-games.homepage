@@ -13,5 +13,11 @@ jQuery(document).ready(function($){
 		$(this).remove();
 	});
 
+	// Auto hides the top navbar when scrolling
+	$('.navbar-fixed-top').autoHidingNavbar({
+		showOnUpScroll: true,
+		showOnBottom:   true
+	});
+
 });
 
