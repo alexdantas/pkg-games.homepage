@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+		<meta name="description" content="Tasks page for the Debian Games Team">
+		<meta name="author"      content="Alexandre Dantas">
+		<meta name="keywords"    content="debian,game,tasks">
+
+		<title>Tasks - Debian Games Team</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css"        rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+
+				<!-- Left navbar control field -->
+				<div class="navbar-header">
+
+					<!-- Only shown on small screens -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!-- Big ol' title -->
+					<a class="navbar-brand" href="#">Debian Games Team</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- Left navbar items -->
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="https://wiki.debian.org/Games/Development#GetInvolved">
+								<span class="glyphicon glyphicon-tower"></span>
+								Get Involved
+							</a>
+						</li>
+						<li>
+							<a href="https://wiki.debian.org/Games/Team">
+								<span class="glyphicon glyphicon-book"></span>
+								Wiki
+							</a>
+						</li>
+						<li>
+							<a href="http://qa.debian.org/developer.php?login=pkg-games-devel@lists.alioth.debian.org">
+								<span class="glyphicon glyphicon-gift"></span>
+								Packages
+							</a>
+						</li>
+					</ul>
+
+					<!-- Right navbar items -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-picture"></span>
+								Choose Theme
+								<b class="caret"></b>
+							</a>
+
+							<ul class="dropdown-menu">
+
+								<!-- All color themes available.
+								- Check out the file `js/themes.js`
+								-->
+								<li><a href="#" id="bootstrap">Bootstrap</a></li>
+								<li class="divider"></li>
+								<li><a href="#" id="amelia">Amelia</a></li>
+								<li><a href="#" id="cerulean">Cerulean</a></li>
+								<li><a href="#" id="cosmo">Cosmo</a></li>
+								<li><a href="#" id="cyborg">Cyborg</a></li>
+								<li><a href="#" id="darkly">Darkly</a></li>
+								<li><a href="#" id="flatly">Flatly</a></li>
+								<li><a href="#" id="journal">Journal</a></li>
+								<li><a href="#" id="lumen">Lumen</a></li>
+								<li><a href="#" id="readable">Readable</a></li>
+								<li><a href="#" id="simplex">Simplex</a></li>
+								<li><a href="#" id="slate">Slate</a></li>
+								<li><a href="#" id="spacelab">Spacelab</a></li>
+								<li><a href="#" id="superhero">Superhero</a></li>
+								<li><a href="#" id="united">United</a></li>
+								<li><a href="#" id="yeti">Yeti</a></li>
+
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<!-- Page Content -->
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<img class="logo" src="img/proposed-logo.png">
+					<img class="logo" src="img/proposed-logo2.png">
+
+					<!-- Internal links -->
+					<div class="list-group">
+						<a href="index.html" class="list-group-item">
+							<span class="glyphicon glyphicon-home"></span>
+							Home
+						</a>
+						<a href="tasks.html" class="list-group-item active">
+							<span class="glyphicon glyphicon-list-alt"></span>
+							Tasks
+						</a>
+					</div>
+
+					<!-- External links -->
+					<div class="list-group">
+						<a href="http://lists.debian.org/debian-devel-games/" class="list-group-item">
+							<span class="glyphicon glyphicon-envelope"></span>
+							Mailing List
+						</a>
+						<a href="http://alioth.debian.org/projects/pkg-games" class="list-group-item">
+							<span class="glyphicon glyphicon-briefcase"></span>
+
+							Allioth Project
+						</a>
+						<a href="https://wiki.debian.org/Games/Development" class="list-group-item">
+							<span class="glyphicon glyphicon-heart"></span>
+
+							Documentation
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-9">
+					<div class="row carousel-holder">
+						<div class="col-md-12">
+
+							<h1>Tasks List</h1>
+
+							<p class="lead">
+								This is a list of the Tasks Debian Games is made of.
+								<br />
+								<small>Some more info here</small>
+							</p>
+
+							<div class="panel panel-default panel-primary">
+								<div class="panel-heading">
+									<h2 class="panel-title">
+										<span class="glyphicon glyphicon-th-list"></span>
+										Table of Contents
+									</h2>
+								</div>
+								<ul class="list-group">
+									<a class="list-group-item" href="#adventure">
+										Adventure
+										<span class="badge">22</span>
+									</a>
+									<a class="list-group-item" href="#arcade">Arcade</a>
+									<a class="list-group-item" href="#board">Board</a>
+									<a class="list-group-item" href="#c++-dev">C, C++ and D development</a>
+									<a class="list-group-item" href="#card">Card</a>
+									<a class="list-group-item" href="#chess">Chess</a>
+									<a class="list-group-item" href="#console">Console</a>
+									<a class="list-group-item" href="#emulator">Emulator</a>
+									<a class="list-group-item" href="#finest">Finest</a>
+									<a class="list-group-item" href="#finest-light">Finest-light</a>
+									<a class="list-group-item" href="#fps">Fps</a>
+									<a class="list-group-item" href="#java-dev">Java development</a>
+									<a class="list-group-item" href="#minesweeper">Minesweeper</a>
+									<a class="list-group-item" href="#mud">Mud</a>
+									<a class="list-group-item" href="#platform">Platform</a>
+									<a class="list-group-item" href="#programming">Programming</a>
+									<a class="list-group-item" href="#puzzle">Puzzle</a>
+									<a class="list-group-item" href="#python-dev">Python development</a>
+									<a class="list-group-item" href="#racing">Racing</a>
+									<a class="list-group-item" href="#rogue">Rogue</a>
+									<a class="list-group-item" href="#rpg">Rpg</a>
+									<a class="list-group-item" href="#shootemup">Shoot 'em up</a>
+									<a class="list-group-item" href="#simulation">Simulation</a>
+									<a class="list-group-item" href="#sport">Sport</a>
+									<a class="list-group-item" href="#strategy">Strategy</a>
+									<a class="list-group-item" href="#tetris">
+										Tetris
+										<span class="badge">7</span>
+									</a>
+									<a class="list-group-item" href="#typing">Typing</a>
+								</ul>
+							</div>
+
+							<!-- Adventure games -->
+							<hr>
+
+							<a name="adventure" id="adventure" href="#adventure">
+							</a>
+							<h2>
+								<a href="http://blends.debian.org/games/tasks/adventure" name="adventure" id="adventure">
+									Adventure - Debian's adventure games
+								</a>
+							</h2>
+
+							<p class="lead">
+								This metapackage will install
+								adventure games, interpreter and engines. <br />
+								<small>
+									Official Debian packages with high relevance
+								</small>
+							</p>
+
+
+
+							<table class="table table-striped table-hover">
+								<tbody>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Beneath-a-steel-sky</a>
+										</td>
+										<td>
+											classic 2D point and click science fiction adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Bsdgames</a>
+										</td>
+										<td>
+											collection of classic textual unix games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Drascula</a>
+										</td>
+										<td>
+											classic 2D point and click adventure game -- English version
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://spellbreaker.org/%7Echrender/fizmo">Fizmo-ncursesw</a>
+										</td>
+										<td>
+											Ncurses-based Z-machine interpreter for Infocom/Inform games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Flight-of-the-amazon-queen</a>
+										</td>
+										<td>
+											classic 2D point and click fantasy adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.gnu.org/software/freedink/">Freedink</a>
+										</td>
+										<td>
+											humorous top-down adventure and role-playing game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://freesci.linuxgames.com/">Freesci</a>
+										</td>
+										<td>
+											a portable interpreter for SCI games like Space Quest 3
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://frotz.sourceforge.net/">Frotz</a>
+										</td>
+										<td>
+											interpreter of Z-code story-files
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://ccxvii.net/gargoyle/">Gargoyle-free</a>
+										</td>
+										<td>
+											graphical player for Interactive Fiction games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://instead.sourceforge.net/">Instead</a>
+										</td>
+										<td>
+											Simple text adventures/visual novels engine
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://jzip.sourceforge.net/">Jzip</a>
+										</td>
+										<td>
+											Text mode interpreter for Z-Code adventures
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Lure-of-the-temptress</a>
+										</td>
+										<td>
+											classic 2D point and click fantasy adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://onscripter.sourceforge.jp/onscripter.html">Onscripter</a>
+										</td>
+										<td>
+											Visual novel games engine compatible to NScripter
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Qtads</a>
+										</td>
+										<td>
+											Qt HTML interpreter for TADS
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.renpy.org/">Renpy</a>
+										</td>
+										<td>
+											framework for developing visual-novel type games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.elliotglaysher.org/rlvm">Rlvm</a>
+										</td>
+										<td>
+											RealLive virtual machine clone
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Scottfree</a>
+										</td>
+										<td>
+											Interpreter for Adventure International games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Scummvm</a>
+										</td>
+										<td>
+											engine for several graphical adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://opensludge.sourceforge.net/">Sludge-devkit</a>
+										</td>
+										<td>
+											Development tools for creating SLUDGE adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://opensludge.sourceforge.net/">Sludge-engine</a>
+										</td>
+										<td>
+											Runtime engine for playing SLUDGE adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://8ne.sakura.ne.jp:20008/chika/unitbase/xsys35/">Xsystem35</a>
+										</td>
+										<td>
+											System 3.5 games engine for X Window System
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.eblong.com/zarf/xzip.html">Xzip</a>
+										</td>
+										<td>
+											Interpreter of Infocom-format story-files
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+
+							<!-- Tetris games -->
+							<hr>
+
+							<a name="tetris" id="tetris" href="#tetris">
+							</a>
+							<h2>
+								<a href="http://blends.debian.org/games/tasks/tetris" name="tetris" id="tetris">
+									Tetris - Debian's tetris-like games
+								</a>
+							</h2>
+
+							<p class="lead">
+								This metapackage will install
+								tetris-like games.<br />
+								<small>
+									Official Debian packages with high relevance
+								</small>
+							</p>
+
+							<table class="table table-striped table-hover">
+								<tbody>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Beneath-a-steel-sky</a>
+										</td>
+										<td>
+											classic 2D point and click science fiction adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Bsdgames</a>
+										</td>
+										<td>
+											collection of classic textual unix games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Drascula</a>
+										</td>
+										<td>
+											classic 2D point and click adventure game -- English version
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://spellbreaker.org/%7Echrender/fizmo">Fizmo-ncursesw</a>
+										</td>
+										<td>
+											Ncurses-based Z-machine interpreter for Infocom/Inform games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Flight-of-the-amazon-queen</a>
+										</td>
+										<td>
+											classic 2D point and click fantasy adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.gnu.org/software/freedink/">Freedink</a>
+										</td>
+										<td>
+											humorous top-down adventure and role-playing game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://freesci.linuxgames.com/">Freesci</a>
+										</td>
+										<td>
+											a portable interpreter for SCI games like Space Quest 3
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://frotz.sourceforge.net/">Frotz</a>
+										</td>
+										<td>
+											interpreter of Z-code story-files
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://ccxvii.net/gargoyle/">Gargoyle-free</a>
+										</td>
+										<td>
+											graphical player for Interactive Fiction games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://instead.sourceforge.net/">Instead</a>
+										</td>
+										<td>
+											Simple text adventures/visual novels engine
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://jzip.sourceforge.net/">Jzip</a>
+										</td>
+										<td>
+											Text mode interpreter for Z-Code adventures
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Lure-of-the-temptress</a>
+										</td>
+										<td>
+											classic 2D point and click fantasy adventure game
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://onscripter.sourceforge.jp/onscripter.html">Onscripter</a>
+										</td>
+										<td>
+											Visual novel games engine compatible to NScripter
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Qtads</a>
+										</td>
+										<td>
+											Qt HTML interpreter for TADS
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.renpy.org/">Renpy</a>
+										</td>
+										<td>
+											framework for developing visual-novel type games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.elliotglaysher.org/rlvm">Rlvm</a>
+										</td>
+										<td>
+											RealLive virtual machine clone
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a>Scottfree</a>
+										</td>
+										<td>
+											Interpreter for Adventure International games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.scummvm.org/">Scummvm</a>
+										</td>
+										<td>
+											engine for several graphical adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://opensludge.sourceforge.net/">Sludge-devkit</a>
+										</td>
+										<td>
+											Development tools for creating SLUDGE adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://opensludge.sourceforge.net/">Sludge-engine</a>
+										</td>
+										<td>
+											Runtime engine for playing SLUDGE adventure games
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://8ne.sakura.ne.jp:20008/chika/unitbase/xsys35/">Xsystem35</a>
+										</td>
+										<td>
+											System 3.5 games engine for X Window System
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="http://www.eblong.com/zarf/xzip.html">Xzip</a>
+										</td>
+										<td>
+											Interpreter of Infocom-format story-files
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /container -->
+
+		<div class="container">
+			<hr>
+
+			<!-- Footer -->
+			<footer id="header" >
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Copyright &copy; The Debian Games Team 2014</p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts placed on bottom for faster loading -->
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Custom script to load CSS themes dynamically -->
+		<script src="js/themes.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
+
