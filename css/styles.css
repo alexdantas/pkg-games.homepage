@@ -1,0 +1,14 @@
+/**
+ * Custom styles for this page
+ * (besides Bootstrap and friends)
+ */
+
+body {
+	/* Padding for the top navbar */
+    padding-top: 70px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
