@@ -27,17 +27,23 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 
+				<!-- Left navbar control field -->
 				<div class="navbar-header">
+
+					<!-- Only shown on small screens -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+
+					<!-- Big ol' title -->
 					<a class="navbar-brand" href="#">Sample</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- Left navbar items -->
 					<ul class="nav navbar-nav">
 						<li>
 							<a href="#">Sample1</a>
@@ -46,6 +52,44 @@
 							<a href="#">Sample2</a>
 						</li>
 					</ul>
+
+					<!-- Right navbar items -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-picture"></span>
+								Choose Theme
+								<b class="caret"></b>
+							</a>
+
+							<ul class="dropdown-menu">
+
+								<!-- All color themes available.
+								   - Check out the file `js/themes.js`
+								   -->
+								<li><a href="#" id="bootstrap">Bootstrap</a></li>
+								<li class="divider"></li>
+								<li><a href="#" id="amelia">Amelia</a></li>
+								<li><a href="#" id="cerulean">Cerulean</a></li>
+								<li><a href="#" id="cosmo">Cosmo</a></li>
+								<li><a href="#" id="cyborg">Cyborg</a></li>
+								<li><a href="#" id="darkly">Darkly</a></li>
+								<li><a href="#" id="flatly">Flatly</a></li>
+								<li><a href="#" id="journal">Journal</a></li>
+								<li><a href="#" id="lumen">Lumen</a></li>
+								<li><a href="#" id="readable">Readable</a></li>
+								<li><a href="#" id="simplex">Simplex</a></li>
+								<li><a href="#" id="slate">Slate</a></li>
+								<li><a href="#" id="spacelab">Spacelab</a></li>
+								<li><a href="#" id="superhero">Superhero</a></li>
+								<li><a href="#" id="united">United</a></li>
+								<li><a href="#" id="yeti">Yeti</a></li>
+
+							</ul>
+						</li>
+					</ul>
+
 				</div>
 			</div>
 		</nav>
@@ -96,6 +140,9 @@
 		<!-- Scripts placed on bottom for faster loading -->
 		<script src="js/jquery-1.11.0.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Custom script to load CSS themes dynamically -->
+		<script src="js/themes.js"></script>
 	</body>
 </html>
 
