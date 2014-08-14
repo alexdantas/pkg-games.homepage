@@ -12,10 +12,22 @@ footer {
     margin: 50px 0;
 }
 
-img#logo {
-	max-width   : 50%;
-	max-height  : 250px;
-	margin-left : 25%;
-	height      : auto;
+img.logo {
+	max-width     : 50%;
+	max-height    : 250px;
+	margin-left   : 25%;
+	margin-bottom : 10%;
+	height        : auto;
+}
+
+/* Preventing Bootstrap from truncating
+ * my definition list.
+ * Thanks: http://stackoverflow.com/a/12860681
+ */
+.dl-horizontal dt
+{
+	white-space: normal;
+	width: 25%;
+	margin-right: 10px;
 }
 

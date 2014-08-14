@@ -1,3 +1,8 @@
+/**
+ * Makes possible to load themes (CSS files)
+ * dynamically.
+ */
+
 // Runs when everything's done being loaded
 jQuery(document).ready(function($){
 
