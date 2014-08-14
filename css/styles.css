@@ -31,3 +31,14 @@ img.logo {
 	margin-right: 10px;
 }
 
+
+/* Styles for "Featured Game"
+ */
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
