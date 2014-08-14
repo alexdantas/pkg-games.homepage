@@ -1,6 +1,10 @@
 /**
  * Makes possible to load themes (CSS files)
  * dynamically.
+ *
+ * Note: Uses jQuery Cookie to store the last
+ *       set theme. It is then used to reapply
+ *       when revisiting this page.
  */
 
 // Runs when everything's done being loaded
@@ -8,8 +12,10 @@ jQuery(document).ready(function($){
 
 	// Global variable that holds the last
 	// loaded CSS file.
+	//
 	// We need it to prevent multiple CSS
 	// styles overlapping each other.
+	//
 	var last_loaded_theme = "";
 
 	// Dynamically loads a theme with `theme_name`.
@@ -37,7 +43,19 @@ jQuery(document).ready(function($){
 		);
 
 		last_loaded_theme = theme_name;
+
+		// This is a session cookie
+		// (expires when user closes browser)
+		$.cookie("theme", theme_name);
 	};
+
+	// Loading previous theme...!
+	var cookievalue = $.cookie("theme");
+
+	if (typeof(cookievalue) !== "undefined") {
+		last_loaded_theme = cookievalue;
+		load_theme(last_loaded_theme);
+	}
 
 	// Now we tediously check for each clicked element
 	// and load it's theme.
