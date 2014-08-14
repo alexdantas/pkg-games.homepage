@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+		<meta name="description" content="Statistics page for the Debian Games Team">
+		<meta name="author"      content="Alexandre Dantas">
+		<meta name="keywords"    content="debian,game,tasks">
+
+		<title>Statistics - Debian Games Team</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css"        rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+
+				<!-- Left navbar control field -->
+				<div class="navbar-header">
+
+					<!-- Only shown on small screens -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<!-- Big ol' title -->
+					<a class="navbar-brand" href="#">Debian Games Team</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- Left navbar items -->
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="https://wiki.debian.org/Games/Development#GetInvolved">
+								<span class="glyphicon glyphicon-tower"></span>
+								Get Involved
+							</a>
+						</li>
+						<li>
+							<a href="https://wiki.debian.org/Games/Team">
+								<span class="glyphicon glyphicon-book"></span>
+								Wiki
+							</a>
+						</li>
+						<li>
+							<a href="http://qa.debian.org/developer.php?login=pkg-games-devel@lists.alioth.debian.org">
+								<span class="glyphicon glyphicon-gift"></span>
+								Packages
+							</a>
+						</li>
+					</ul>
+
+					<!-- Right navbar items -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="glyphicon glyphicon-picture"></span>
+								Choose Theme
+								<b class="caret"></b>
+							</a>
+
+							<ul class="dropdown-menu">
+
+								<!-- All color themes available.
+								- Check out the file `js/themes.js`
+								-->
+								<li><a href="#" id="bootstrap">Bootstrap</a></li>
+								<li class="divider"></li>
+								<li><a href="#" id="amelia">Amelia</a></li>
+								<li><a href="#" id="cerulean">Cerulean</a></li>
+								<li><a href="#" id="cosmo">Cosmo</a></li>
+								<li><a href="#" id="cyborg">Cyborg</a></li>
+								<li><a href="#" id="darkly">Darkly</a></li>
+								<li><a href="#" id="flatly">Flatly</a></li>
+								<li><a href="#" id="journal">Journal</a></li>
+								<li><a href="#" id="lumen">Lumen</a></li>
+								<li><a href="#" id="readable">Readable</a></li>
+								<li><a href="#" id="simplex">Simplex</a></li>
+								<li><a href="#" id="slate">Slate</a></li>
+								<li><a href="#" id="spacelab">Spacelab</a></li>
+								<li><a href="#" id="superhero">Superhero</a></li>
+								<li><a href="#" id="united">United</a></li>
+								<li><a href="#" id="yeti">Yeti</a></li>
+
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<!-- Page Content -->
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<img class="logo" src="img/proposed-logo.png">
+					<img class="logo" src="img/proposed-logo2.png">
+
+					<!-- Internal links -->
+					<div class="list-group">
+						<a href="index.html" class="list-group-item">
+							<span class="glyphicon glyphicon-home"></span>
+							Home
+						</a>
+						<a href="tasks.html" class="list-group-item">
+							<span class="glyphicon glyphicon-list-alt"></span>
+							Tasks
+						</a>
+						<a href="stats.html" class="list-group-item active">
+							<span class="glyphicon glyphicon-signal"></span>
+							Statistics
+						</a>
+					</div>
+
+					<!-- External links -->
+					<div class="list-group">
+						<a href="http://lists.debian.org/debian-devel-games/" class="list-group-item">
+							<span class="glyphicon glyphicon-envelope"></span>
+							Mailing List
+						</a>
+						<a href="http://alioth.debian.org/projects/pkg-games" class="list-group-item">
+							<span class="glyphicon glyphicon-briefcase"></span>
+
+							Allioth Project
+						</a>
+						<a href="https://wiki.debian.org/Games/Development" class="list-group-item">
+							<span class="glyphicon glyphicon-heart"></span>
+
+							Documentation
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-9">
+					<div class="row carousel-holder">
+						<div class="col-md-12">
+
+							<h1>Statistics</h1>
+
+							<p class="lead">
+								This page contains miscellaneous charts on the Games Team.
+								<br />
+								<small>Some more info here</small>
+							</p>
+
+							<hr>
+
+							<h2>
+								Active writers on
+								<a href="http://lists.debian.org/debian-devel-games/">Debian games user mailing list</a>
+							</h2>
+
+							<img class="img-responsive img-thumbnail"
+								 src="http://blends.debian.net/liststats/authorstat_debian-devel-games.png"
+								 title="Active writers on user mailing list"
+								 alt="Bar chart of active writers on user mailing list">
+
+							<hr>
+
+							<h2>
+								Active writers on
+								<a href="http://lists.alioth.debian.org/pipermail/pkg-games-devel/">Debian games developer list</a>
+							</h2>
+
+							<img class="img-responsive img-thumbnail"
+								 src="http://blends.debian.net/liststats/authorstat_pkg-games-devel.png"
+								 title="Active writers on developer mailing list"
+								 alt="Bar chart of active writers on developer mailing list">
+
+							<hr>
+
+							<h2>Uploaders of Games</h2>
+
+							<img class="img-responsive img-thumbnail"
+								 src="http://blends.debian.net/liststats/uploaders_pkg-games.png"
+								 title="Active writers on mailing list"
+								 alt="Bar chart of active writers on mailing list">
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /container -->
+
+		<div class="container">
+			<hr>
+
+			<!-- Footer -->
+			<footer id="header" >
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Copyright &copy; The Debian Games Team 2014</p>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts placed on bottom for faster loading -->
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Custom script to load CSS themes dynamically -->
+		<script src="js/themes.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
+
