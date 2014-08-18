@@ -1,0 +1,37 @@
+/**
+ * This CSS file contains the Unicode code points
+ * for all glyphs used on the pages.
+ */
+
+[class^="icon-"], [class*=" icon-"] {
+	speak          : none;
+	font-size      : 150%;
+	font-style     : normal;
+	font-weight    : normal;
+	font-variant   : normal;
+	text-transform : none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing  : antialiased;
+	-moz-osx-font-smoothing : grayscale;
+}
+
+/* All icons and their respective Unicode
+ * counterparts.
+ */
+.icon-home:before     { content: "🏠"; }
+.icon-image:before    { content: "🖼"; }
+.icon-game:before     { content: "🎮"; }
+.icon-book:before     { content: "📖"; }
+.icon-file:before     { content: "📄"; }
+.icon-tag:before      { content: "📄"; }
+.icon-envelope:before { content: "🖂"; }
+.icon-user:before     { content: "👤"; }
+.icon-bug:before      { content: "🐛"; }
+.icon-road:before     { content: "✈"; }
+.icon-earth:before    { content: "🌎"; }
+.icon-star:before     { content: "💎"; }
+.icon-heart:before    { content: "❤"; }
+.icon-exit:before     { content: "🔗"; }
+.icon-table:before    { content: "🗠"; }
+.icon-warning:before  { content: "⚠" ; }
